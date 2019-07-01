@@ -2,4 +2,6 @@
 .bundle
 .sass-cache
 _site
+_posts
+index.html
 Gemfile.lock
