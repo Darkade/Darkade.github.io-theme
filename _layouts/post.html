@@ -1,5 +1,14 @@
 ---
-layout: default
+layout: page
 ---
+<article>
+  <h2 class="my-2"><a href="{{ post.url }}">{{ page.title }}</a></h2>
+  <p class="text-right">{{ page.date | date: "%b %d, %Y" }}</p>
+  <hr class="mx-5 my-3">
 
-{{ content }}
+  <div clsas="row">
+    <div class="col">
+      {{ content }}
+    </div>
+  </div>
+</article>
