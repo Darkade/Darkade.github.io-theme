@@ -3,5 +3,6 @@
 .sass-cache
 _site
 _posts
+_config.yml
 index.html
 Gemfile.lock
