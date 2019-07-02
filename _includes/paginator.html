@@ -15,9 +15,9 @@
     {% endif %}
 
     {% if forloop.first == true %}
-      {% capture pageurl %} {{ site.baseurl }}/# {% endcapture %}
+      {% capture pageurl %} /# {% endcapture %}
     {% else %}
-      {% capture pageurl %} {{ site.baseurl }}/page{{ i }}/ {% endcapture %}
+      {% capture pageurl %} /page{{ i }}/ {% endcapture %}
     {% endif %}
 
     <li class="page-item {{ active }}"><a class="page-link" href="{{ pageurl }}">{{ i }}</a></li>
