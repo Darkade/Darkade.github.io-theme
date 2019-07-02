@@ -3,10 +3,16 @@ layout: page
 ---
 
 {% for post in paginator.posts %}
-<article class="row">
+<article class="row py-1">
   <div class="col">
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <p>{{ post.excerpt }}</p>
+    <div class="mx-3 my-4">
+    {{ post.excerpt }}
+    </div>
+    <p class="text-right">{{ post.date | date: "%b %d, %Y" }}</p>
+    {% if forloop.last != true %}
+    <hr class="mx-5 my-3">
+    {% endif %}
   </div>
 </article>
 {% endfor %}
