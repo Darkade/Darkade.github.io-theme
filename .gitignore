@@ -2,7 +2,11 @@
 .bundle
 .sass-cache
 _site
+Gemfile.lock
+
+
 _posts
 _config.yml
 index.html
-Gemfile.lock
+about.md
+assets/201*

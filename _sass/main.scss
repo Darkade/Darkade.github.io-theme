@@ -1,6 +1,18 @@
-article img {
-  max-width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@import "bootstrap/bootstrap";
+
+article {
+  img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    @extend .table;
+    thead {
+      @extend .thead-dark
+    }
+  }
+
 }
