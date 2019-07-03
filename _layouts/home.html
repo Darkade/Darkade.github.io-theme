@@ -9,7 +9,7 @@ layout: page
     <div class="mx-3 my-4">
     {{ post.excerpt }}
     </div>
-    <p class="text-right">{{ post.date | date: "%b %d, %Y" }}</p>
+    <p class="text-right">{{ post.author | default: site.author }} – {{ post.date | date: "%b %d, %Y" }}</p>
     {% if forloop.last != true %}
     <hr class="mx-5 my-3">
     {% endif %}
