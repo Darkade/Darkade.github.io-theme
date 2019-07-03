@@ -1,5 +1,14 @@
 @import "bootstrap/bootstrap";
 
+footer {
+  svg {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+}
+
 article {
   img {
     max-width: 80%;
