@@ -26,4 +26,8 @@ article {
       @extend .thead-dark
     }
   }
+
+  blockquote {
+    @extend .blockquote;
+  }
 }
