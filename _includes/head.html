@@ -3,5 +3,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:site" content="@darkade" />
+  <meta name="twitter:creator" content="@darkade">
+  <meta name="twitter:card" content="summary">
   {% seo %}
 </head>
