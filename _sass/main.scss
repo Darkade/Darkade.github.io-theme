@@ -1,4 +1,4 @@
-$primary:       #5BCEFA;
+$primary:   #5BCEFA;
 $secondary: #F5A9B8;
 
 @import "bootstrap/bootstrap";
@@ -29,5 +29,11 @@ article {
 
   blockquote {
     @extend .blockquote;
+    border-color: transparentize($secondary, 0.5) !important;
+    border-left-width: 0.3rem !important;
+    border-left: solid;
+    margin-left: 2rem;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: transparentize($secondary, 0.91) !important;
   }
 }
