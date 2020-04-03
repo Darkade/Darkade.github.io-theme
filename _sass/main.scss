@@ -37,3 +37,7 @@ article {
     background-color: transparentize($secondary, 0.91) !important;
   }
 }
+
+svg.icon {
+  fill: $primary;
+}
