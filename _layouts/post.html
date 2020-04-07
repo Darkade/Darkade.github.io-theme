@@ -1,15 +1,18 @@
 ---
 layout: page
 ---
-<article>
-  <h1 class="my-2 h2"><a href="{{ post.url }}">{{ page.title }}</a></h1>
-  <p class="text-right">{{ page.date | date: "%b %d, %Y" }}</p>
-  <hr class="mx-5 my-3">
+<article class="row py-1">
+  <div class="col">
+    <h1 class="my-2 h2"><a href="{{ post.url }}">{{ page.title }}</a></h1>
+    <p class="text-right">{{ page.date | date: "%b %d, %Y" }}</p>
+    <hr class="mx-5 my-3">
 
-  <div clsas="row">
-    <div class="col">
-      {{ content }}
+    <div class="row">
+      <div class="col">
+        {{ content }}
+      </div>
     </div>
+
+    <p class="text-right font-italic">– {{ post.author | default: site.author }}</p>
   </div>
-  <p class="text-right font-italic">– {{ post.author | default: site.author }}</p>
 </article>

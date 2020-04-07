@@ -9,16 +9,16 @@ layout: page
     <h2 class="my-2"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="text-right">{{ post.date | date: "%b %d, %Y" }}</p>
     <hr class="mx-5 my-3">
+
     <div class="row">
-    {{ post.excerpt }}
-    <p class="text-right">
-      <a href="{{ post.url }}" role="button" aria-pressed="true">... seguir leyendo</a>
-    </p>
+      <div class="col">
+        {{ post.excerpt }}
+        <p class="text-right">
+          <a href="{{ post.url }}" role="button" aria-pressed="true">... seguir leyendo</a>
+        </p>
+      </div>
     </div>
-    <p class="text-right">{{ post.author | default: site.author }} – {{ post.date | date: "%b %d, %Y" }}</p>
-    {% if forloop.last != true %}
-    <hr class="mx-5 my-3">
-    {% endif %}
+
   </div>
 </article>
 {% endfor %}
