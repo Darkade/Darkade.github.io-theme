@@ -18,6 +18,11 @@ article {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    & + em {
+      display: block;
+      text-align: center;
+    }
   }
 
   table {
