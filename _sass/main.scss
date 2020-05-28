@@ -1,7 +1,13 @@
 $primary:   #5BCEFA;
 $secondary: #F5A9B8;
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @import "bootstrap/bootstrap";
+
+header {
+  font-family: 'Press Start 2P', cursive;
+}
 
 footer {
   svg {
