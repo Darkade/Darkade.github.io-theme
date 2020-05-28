@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "Darkade.github.io-theme"
-  spec.version       = "1.0.1"
+  spec.name          = "darkade.github.io-theme"
+  spec.version       = "1.0.2"
   spec.authors       = ["Ivan Reyes"]
   spec.email         = ["ivanreyesconde@gmail.com"]
 
