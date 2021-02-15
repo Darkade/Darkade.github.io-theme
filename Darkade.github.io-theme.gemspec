@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "darkade.github.io-theme"
-  spec.version       = "1.1.5"
+  spec.version       = "1.2.0"
   spec.authors       = ["Ivan Reyes"]
   spec.email         = ["ivanreyesconde@gmail.com"]
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", "~> 4.1"
   spec.add_runtime_dependency 'jekyll-paginate-v2', '~> 3.0'
   spec.add_runtime_dependency 'rouge', '~> 3.19', '>= 3.19'
-  spec.add_runtime_dependency 'jekyll-feed', '~> 0.13.0'
+  spec.add_runtime_dependency 'jekyll-feed', '~> 0.15.1'
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.7', '>= 2.7.1'
   spec.add_runtime_dependency 'jekyll-sitemap', '~> 1.4'
   spec.add_development_dependency "bundler", "~> 2"
