@@ -55,6 +55,35 @@ article {
   }
 }
 
+#language-selector-wrapper {
+  position: sticky;
+  bottom: 0vh;
+
+  .language-selector {
+    list-style: none;
+    text-align: right;
+    padding: 0 1rem;
+    margin: 0;
+
+    & > li {
+      display: inline;
+
+      a {
+        width: 2.5rem;
+      }
+      &.en a {
+        content: url(/assets/langsprites/noun_english_1044185.svg);
+      }
+      &.es a {
+        content: url(/assets/langsprites/noun_spanish_1044259.svg);
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    position: relative;
+  }
+}
+
 svg.icon {
   fill: $primary;
 }
