@@ -57,6 +57,10 @@ article {
     padding: 1rem 1rem 1rem 2rem;
     background-color: transparentize($secondary, 0.91) !important;
   }
+
+  a {
+    text-shadow: 0.1px 0px darken($primary, 1%);
+  }
 }
 
 #language-selector-wrapper {
