@@ -21,6 +21,10 @@ footer {
     max-width: 1.5rem;
     margin-right: 0.5rem;
     vertical-align: middle;
+
+    &.icon {
+      fill: $primary;
+    }
   }
 }
 
@@ -56,34 +60,20 @@ article {
 }
 
 #language-selector-wrapper {
-  position: sticky;
-  bottom: 0vh;
+  bottom: 3vh;
 
   .language-selector {
-    list-style: none;
-    text-align: right;
-    padding: 0 1rem;
-    margin: 0;
-
-    & > li {
-      display: inline;
-
-      a {
-        width: 2.5rem;
-      }
-      &.en a {
-        content: url(/assets/langsprites/noun_english_1044185.svg);
-      }
-      &.es a {
-        content: url(/assets/langsprites/noun_spanish_1044259.svg);
+    svg {
+      max-height: 3rem;
+      max-width: 3rem;
+      margin: 0;
+      vertical-align: middle;
+      &.icon {
+        fill: $secondary;
       }
     }
   }
   @media (max-width: 600px) {
-    position: relative;
+    position: relative !important;
   }
-}
-
-svg.icon {
-  fill: $primary;
 }
