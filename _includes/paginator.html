@@ -6,23 +6,13 @@
     <li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
     {% endif %}
 
-    {% for i in (1..paginator.total_pages) %}
-
-    {% if i == paginator.page %}
-      {% assign active = "active" %}
-    {% else %}
-      {% assign active = "" %}
+    {% if paginator.page_trail %}
+      {% for trail in paginator.page_trail %}
+        <li {% if page.url == trail.path %}class="page-item active"{% else %}class="page-item"{% endif %}>
+            <a class="page-link" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+        </li>
+      {% endfor %}
     {% endif %}
-
-    {% if forloop.first == true %}
-      {% capture pageurl %}/#{% endcapture %}
-    {% else %}
-      {% capture pageurl %}/page{{ i }}/{% endcapture %}
-    {% endif %}
-
-    <li class="page-item {{ active }}"><a class="page-link" href="{{ pageurl }}">{{ i }}</a></li>
-
-    {% endfor %}
 
     {% if paginator.next_page %}
     <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path }}"><span aria-hidden="true">&raquo;</span></a></li>
