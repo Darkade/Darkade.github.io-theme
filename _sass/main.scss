@@ -24,6 +24,7 @@ footer {
 
     &.icon {
       fill: $primary;
+      width: 100%;
     }
   }
 }
@@ -43,9 +44,7 @@ article {
 
   table {
     @extend .table;
-    thead {
-      @extend .thead-dark
-    }
+    @extend .table-dark;
   }
 
   blockquote {
@@ -74,6 +73,7 @@ article {
       vertical-align: middle;
       &.icon {
         fill: $secondary;
+        width: 100%;
       }
     }
   }

@@ -4,7 +4,7 @@ layout: page
 <article class="row py-1" lang="{{ page.locale | default: site.lang | replace: '_', '-' }}">
   <div class="col">
     <h1 class="my-2 h2"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    <p class="text-right">{{ page.date | date: "%b %d, %Y" }}</p>
+    <p class="text-end">{{ page.date | date: "%b %d, %Y" }}</p>
     <hr class="mx-5 my-3">
 
     <div class="row">
@@ -13,6 +13,6 @@ layout: page
       </div>
     </div>
 
-    <p class="text-right font-italic">– {{ post.author | default: site.author }}</p>
+    <p class="text-end font-italic">– {{ post.author | default: site.author }}</p>
   </div>
 </article>
