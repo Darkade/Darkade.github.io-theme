@@ -1,0 +1,41 @@
+---
+layout: page
+---
+
+<div class="container-sm">
+  <div class="row row-cols-lg-2">
+  <ul class="link-tree mb-3 mt-3 mx-auto  list-unstyled">
+    {% for link in page.links %}
+    <li class="text-center my-2 p-2 border rounded-pill container text-truncate d-flex">
+      <span class="mx-1 me-auto">
+        {% if link.icon %}
+        <svg class="icon img-fluid">
+          <use xlink:href="/assets/sprites/brands.svg#{{ link.icon }}"></use>
+          <use xlink:href="/assets/sprites/regular.svg#{{ link.icon }}"></use>
+          <use xlink:href="/assets/sprites/solid.svg#{{ link.icon }}"></use>
+        </svg>
+        {% else %}
+        {{ link.emoji }}
+        {% endif %}
+      </span>
+      <a class="text-decoration-none stretched-link w-75" href="{{ link.url }}">
+        <span>{{ link.text }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>
+{{ content }}
+
+<style>
+  .link-tree li {
+    line-height: 2rem;
+    position: relative;
+  }
+  .link-tree svg {
+    max-height: 2rem;
+    max-width: 2rem;
+    fill: #F5A9B8;
+  }
+</style>

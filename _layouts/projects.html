@@ -1,0 +1,27 @@
+---
+layout: links
+---
+
+<h3 class="mb-3 text-center text-primary fw-bold">My Projects</h3>
+
+<div class="row row-cols-1 row-cols-sm-2 g-4">
+  {% for project in page.projects %}
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{ project.img }}" class="card-img-top h-50 img-fluid" alt="{{ project.alt }}">
+      <div class="card-body">
+        <h5 class="card-title text-secondary">{{ project.text }}</h5>
+        <p class="card-text">{{ project.description }}</p>
+      </div>
+      <div class="card-footer">
+        {% for link in project.links %}
+        <a href="{{ link.url }}" class="card-link stretched-link">{{ link.text }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+
+{{ content }}

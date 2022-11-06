@@ -1,21 +1,36 @@
 <header>
-  <nav class="navbar navbar-dark bg-primary">
-    <div class="container">
-      <span class="navbar-text me-auto">
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+    <div class="container-fluid">
+      <span class="navbar-text">
         <a class="" style="font-size:1.5rem;" href="/">{{ site.title }}</a>
         <span class="d-none d-md-block text-white text-bold"><small>{{ site.author }} – {{ site.tagline }}</small></span>
       </span>
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about/">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/directory/">Directory</a>
-        </li>
-      </ul>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarToggle"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/links/">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/directory/">Directory</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
