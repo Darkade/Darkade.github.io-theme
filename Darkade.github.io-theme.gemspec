@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "darkade.github.io-theme"
-  spec.version       = "1.4.0"
-  spec.authors       = ["Ivan Reyes"]
-  spec.email         = ["ivanreyesconde@gmail.com"]
+  spec.version       = "1.5.1"
+  spec.authors       = ["Anya Reyes"]
+  spec.email         = ["anyareyesc@gmail.com"]
 
   spec.summary       = "Theme for my personal blog"
-  spec.homepage      = "https://ivan.reyescon.de"
+  spec.homepage      = "https://anya.reyescon.de"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
