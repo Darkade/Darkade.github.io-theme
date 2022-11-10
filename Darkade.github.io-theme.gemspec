@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "darkade.github.io-theme"
-  spec.version       = "1.5.3"
+  spec.version       = "1.5.4"
   spec.authors       = ["Anya Reyes"]
   spec.email         = ["anyareyesc@gmail.com"]
 
