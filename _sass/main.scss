@@ -14,6 +14,10 @@ $font-family-monospace:       "Ubuntu Mono", SFMono-Regular, Menlo, Monaco, Cons
 
 header {
   font-family: 'Press Start 2P', cursive;
+  svg {
+    height: 50px;
+    width: 240px;
+  }
 }
 
 footer {
@@ -74,6 +78,7 @@ article {
       vertical-align: middle;
       &.icon {
         fill: $secondary;
+        filter: drop-shadow(1px 1px 0px $primary);
         width: 100%;
       }
     }
