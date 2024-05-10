@@ -19,4 +19,7 @@
   {% endif %}
 
   {% seo %}
+  {% if page.video %}
+  <meta property="og:video" content="{{ page.video }}" />
+  {% endif %}
 </head>
